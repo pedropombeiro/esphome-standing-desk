@@ -29,6 +29,7 @@ DECODER_VARIANTS = {
     "uplift": DecoderVariants.DECODER_VARIANT_UPLIFT,
     "jarvis": DecoderVariants.DECODER_VARIANT_JARVIS,
     "omnidesk": DecoderVariants.DECODER_VARIANT_OMNIDESK,
+    "logicdata": DecoderVariants.DECODER_VARIANT_LOGICDATA,
 }
 
 CONFIG_SCHEMA = (
