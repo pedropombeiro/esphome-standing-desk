@@ -1,3 +1,9 @@
+This repository is a fork of 
+
+esphome-standing-desk by @tjhorner 
+At the same time it merges the adoptions DanielHabenicht / logicdata-standing-desk
+This fork was created to make it compatible with latest ESPHome Version. 
+
 # ESPHome Standing Desk Configs
 
 This repository contains everything you need to set up common standing desks with a controller board running ESPHome. Specifically:
