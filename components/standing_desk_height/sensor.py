@@ -34,7 +34,7 @@ DECODER_VARIANTS = {
 
 CONFIG_SCHEMA = (
     sensor.sensor_schema(
-        unit_of_measurement="in",
+        unit_of_measurement="cm",
         icon="mdi:human-male-height-variant",
         accuracy_decimals=1
     )
