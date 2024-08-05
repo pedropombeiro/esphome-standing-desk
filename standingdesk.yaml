@@ -1,0 +1,68 @@
+captive_portal:
+
+output:
+  # HS1
+  - platform: gpio
+    id: bit1
+    pin: ${bit1_pin}
+
+  # HS2
+  - platform: gpio
+    id: bit2
+    pin: ${bit2_pin}
+
+  # HS3
+  - platform: gpio
+    id: bit3
+    pin: ${bit3_pin}
+
+  # HS4
+  - platform: gpio
+    id: bit4
+    pin: ${bit4_pin}
+
+# Logical Connection of Action and Bits
+switch:
+  - platform: output
+    name: "up"
+    id: "switch_up"
+    output: bit1
+
+  - platform: output
+    name: "down"
+    id: "switch_down"
+    output: bit4
+
+  - platform: output
+    name: "move position1"
+    id: "move_position1"
+    output: bit2
+
+
+  - platform: output
+    name: "move_position2"
+    id: "move_position2"
+    output: bit3
+
+button:
+  - platform: restart
+    name: "Restart"
+
+# Configurable options
+substitutions:
+  name: "standing-desk"
+  friendly_name: "Upsy Desky"
+  desk_height_name: "Desk Height"
+  target_desk_height_name: "Target Desk Height"
+  standing_desk_variant: "logicdata"
+  # Standing Desk Component Config
+  # standing_desk_uart_rx_pin: GPIO21
+  standing_desk_min_height: "68"
+  standing_desk_max_height: "118"
+  bit1_pin: GPIO16 #up
+  bit2_pin: GPIO17 #memory 1
+  bit3_pin: GPIO18 #memory 2
+  bit4_pin: GPIO19 #down 
+
+  # # Runtime Config Defaults
+  # default_height_units: "cm" # Must be "in" or "cm"
