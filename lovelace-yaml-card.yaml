@@ -1,0 +1,101 @@
+features:
+  - type: custom:service-call
+    entries:
+      - tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.upsydesk_up
+        entity_id: switch.upsydesk_up
+        icon: mdi:arrow-up
+        option: locked
+        type: button
+        value_attribute: state
+        autofill_entity_id: true
+        styles: |-
+          .background {
+            {% if is_state("switch.upsydesk_up", "on") %}
+             --color: yellow;
+            {% endif %}
+          }
+      - tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.upsydesk_move_position1
+        entity_id: switch.upsydesk_move_position1
+        icon: mdi:chair-school
+        option: locked
+        type: button
+        value_attribute: state
+        autofill_entity_id: true
+        styles: |-
+          .background {
+            {% if is_state("switch.upsydesk_move_position1", "on") %}
+             --color: yellow;
+            {% endif %}
+          }
+      - tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.upsydesk_move_position2
+        entity_id: switch.upsydesk_move_position2
+        icon: mdi:walk
+        option: locked
+        type: button
+        value_attribute: state
+        autofill_entity_id: false
+        styles: |-
+          .background {
+            {% if is_state("switch.upsydesk_move_position2", "on") %}
+             --color: yellow;
+            {% endif %}
+          }
+      - tap_action:
+          action: call-service
+          service: switch.toggle
+          target:
+            entity_id: switch.upsydesk_down
+        entity_id: switch.upsydesk_down
+        icon: mdi:arrow-down
+        option: locked
+        type: button
+        value_attribute: state
+        autofill_entity_id: false
+        styles: |-
+          .background {
+            {% if is_state("switch.upsydesk_down", "on") %}
+             --color: yellow;
+            {% endif %}
+          }
+      - tap_action:
+          action: call-service
+          service: switch.turn_off
+          target:
+            entity_id:
+              - switch.upsydesk_up
+              - switch.upsydesk_move_position1
+              - switch.upsydesk_move_position2
+              - switch.upsydesk_down
+        entity_id:
+          - switch.upsydesk_up
+          - switch.upsydesk_move_position1
+          - switch.upsydesk_move_position2
+          - switch.upsydesk_down
+        icon: mdi:stop
+        option: locked
+        type: button
+        value_attribute: state
+        autofill_entity_id: false
+type: tile
+entity: switch.upsydesk_up
+name: Schreibtisch
+icon: mdi:desk
+show_entity_picture: false
+vertical: false
+hide_state: true
+tap_action:
+  action: none
+icon_tap_action:
+  action: none
