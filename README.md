@@ -35,7 +35,7 @@ Here's what worked for me:
 | SHELL | Ground                                       | Grey             | GND       |
 | 1     | up                                           | white            | GPIO16    |
 | 5     | Memory Position 1                            | blue             | GPIO17    |
-| 2     | Memory Position 2                            | green            | GPIO18    |
+| 2     | Memory Position 2 (Position 3 and handset)   | green            | GPIO18    |
 | 4     | down                                         | yellow           | GPIO19    |
 | 6     | (not sure if needed)                         | red              | GPIO21    |
 | 7     | 5V Powersupply                               | black            | VIN / +5V |
