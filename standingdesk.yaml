@@ -156,7 +156,7 @@ substitutions:
   standing_desk_max_height: "118"
   bit1_pin: GPIO16 #up
   bit2_pin: GPIO17 #memory 1
-  bit3_pin: GPIO18 #memory 2
+  bit3_pin: GPIO18 #memory 2 (memory position 3 on handset)
   bit4_pin: GPIO19 #down 
 
   # Runtime Config Defaults
