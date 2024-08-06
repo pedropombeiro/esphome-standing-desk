@@ -1,11 +1,11 @@
-<b>Functionality </b>
+<h1>Functionality </h1>
 This fork lets you control your logicdata standing desk via ESPHome/with an ESP32. It offers function for up, down, memory position 1 and memory position 2. 
 Notice that saving of memory positions is only possible if you have a handset that ofers a save button. 
 
 Additionally you find my lovelace card configuration to control your desk with a small tile if needed:
 ![lovelace-tile-card-standingdesk](https://github.com/RoMaTiX99/esphome-standing-desk/blob/master/lovelace-tile-card-standingdesk.png)
 
-<b>Motivation and history </b>
+<h1>Motivation and history </h1>
 This repository is a fork of [esphome-standing-desk](https://github.com/tjhorner/esphome-standing-desk) by @tjhorner.
 At the same time it merges the adoptions [DanielHabenicht / logicdata-standing-desk](https://github.com/DanielHabenicht/logicdata-standing-desk/tree/main) to have functionality for Logicdata desk - but ended up not using it at the moment (read below). 
 
@@ -23,7 +23,7 @@ Up, Down, Memory1 and Memory2. Personally I don't need more than this.
 
 In the future I will probably work to get the "current height" sensor working in Order to send a specific height. Furthermore the save button would be great - but at the moment it's fine for me.  
 
-<b>Setup </b>
+<h1>Setup </h1>
 First of all the Layout of the 7-Pin-Din connector:
 
 ![7-Pin-Din connector](https://github.com/RoMaTiX99/esphome-standing-desk/blob/master/LOGICDATA_7-PIN_Connector_Handset.png)
