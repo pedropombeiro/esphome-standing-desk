@@ -36,8 +36,6 @@ So the following Pin / cable doesn't need to be connected for basic functionalit
 | Line  | Description                                  | Colours          | ESP32 Pin |
 | ----- | -------------------------------------------- | ---------------- |-----------|
 | 3     |                                              | brown            | -         |
-| 6     |                                              | red              | -         |
-| 7     |                                              | black            | -         |
 
 I used 7-Pin-DIN Y-Splitter-Cable from here: [Aliexpress](https://de.aliexpress.com/item/1005003269764721.html?spm=a2g0o.order_list.order_list_main.5.61e95c5fDRpzA4&gatewayAdapt=glo2deu).
 I ordered two of them and cut one on the female end and connected the wires to and ESP32. 
