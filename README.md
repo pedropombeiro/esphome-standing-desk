@@ -28,9 +28,11 @@ Here's what worked for me:
 | 5     | Memory Position 1                            | blue             | GPIO17    |
 | 2     | Memory Position 2                            | green            | GPIO18    |
 | 4     | down                                         | yellow           | GPIO19    |
+| 6     | (not sure if needed)                         | red              | GPIO21    |
+| 7     | 5V Powersupply                               | black            | VIN / +5V |
 
 
-So the following three Pins / cables don't need to be connected for basic functionality (up/down/mem1/mem2):
+So the following Pin / cable doesn't need to be connected for basic functionality (up/down/mem1/mem2):
 | Line  | Description                                  | Colours          | ESP32 Pin |
 | ----- | -------------------------------------------- | ---------------- |-----------|
 | 3     |                                              | brown            | -         |
