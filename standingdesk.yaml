@@ -94,7 +94,7 @@ switch:
     on_turn_on:
       then: 
         - output.turn_on: bit1
-        - delay: 15s
+        - delay: 20s
         - switch.turn_off: switch_up
     on_turn_off:
       then:
@@ -107,7 +107,7 @@ switch:
     on_turn_on:
       then: 
         - output.turn_on: bit4
-        - delay: 15s
+        - delay: 20s
         - switch.turn_off: switch_down
     on_turn_off:
       then:
@@ -120,11 +120,12 @@ switch:
     on_turn_on:
       then: 
         - output.turn_on: bit2
-        - delay: 15s
+        - delay: 20s
         - switch.turn_off: move_position1
     on_turn_off:
       then:
         - output.turn_off: bit2
+
 
   - platform: output
     name: "move_position2"
@@ -132,11 +133,53 @@ switch:
     output: bit3
     on_turn_on:
       then: 
-        - output.turn_on: bit4
-        - delay: 15s
+        - output.turn_on: bit3
+        - delay: 20s
         - switch.turn_off: move_position2
     on_turn_off:
       then:
+        - output.turn_off: bit3
+
+  - platform: output
+    name: "move_position3"
+    id: "move_position3"
+    output: bit3
+    on_turn_on:
+      then: 
+        - output.turn_on: bit4
+        - delay: 20s
+        - switch.turn_off: move_position3
+    on_turn_off:
+      then:
+        - output.turn_off: bit4
+        - output.turn_off: bit3
+
+  - platform: output
+    name: "move_position4"
+    id: "move_position4"
+    output: bit2
+    on_turn_on:
+      then: 
+        - output.turn_on: bit4
+        - delay: 20s
+        - switch.turn_off: move_position4
+    on_turn_off:
+      then:
+        - output.turn_off: bit2
+        - output.turn_off: bit4
+
+  - platform: output
+    name: "save"
+    id: "save"
+    output: bit1
+    on_turn_on:
+      then: 
+        - output.turn_on: bit4
+        - delay: 2s
+        - switch.turn_off: save
+    on_turn_off:
+      then:
+        - output.turn_off: bit1
         - output.turn_off: bit4
 
 button:
