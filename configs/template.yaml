@@ -1,5 +1,5 @@
 external_components:
-  - source: github://tjhorner/esphome-standing-desk
+  - source: github://pedropombeiro/esphome-standing-desk
     components: [standing_desk_height]
 
 substitutions:
@@ -8,17 +8,21 @@ substitutions:
   standing_desk_height_units: "in"
   standing_desk_variant: "auto"
 
-uart:
-  id: standing_desk_uart
-  rx_pin: ${standing_desk_uart_rx_pin}
-  baud_rate: 9600
-
-sensor:
-  - platform: standing_desk_height
-    id: desk_height
-    name: ${desk_height_name}
-    unit_of_measurement: ${standing_desk_height_units}
-    variant: ${standing_desk_variant}
+# uart:
+# # Direction: Handset -> Control Box
+# - id: standing_desk_uart
+#   baud_rate: 1000
+#   rx_pin:
+#     number: ${standing_desk_uart_rx_pin}
+#     inverted: true
+#   parity: EVEN
+#
+# sensor:
+#   - platform: standing_desk_height
+#     id: desk_height
+#     name: ${desk_height_name}
+#     unit_of_measurement: ${standing_desk_height_units}
+#     variant: ${standing_desk_variant}
 
 output:
   - platform: gpio
